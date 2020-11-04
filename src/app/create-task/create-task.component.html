@@ -1,0 +1,15 @@
+<h3>Create Task</h3>
+
+<form [formGroup]="formInput" (ngSubmit)="onSubmit()">
+    <label>
+        Content:
+        <input type="text" formControlName="content" required>
+    </label>
+
+    <label>
+        Project ID:
+        <input type="text" formControlName="project_id" required>
+    </label>
+
+    <button type="submit">Submit</button>
+</form>
